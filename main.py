@@ -24,6 +24,9 @@ Folgende Funktionen sind noch geplant:
 * HFEA-Rebalancer-Rechner sowie Remind-Funktion
 * optional: Telegram Bot
 * optional: Einbindung von ZahlGrafs-Code zum selber ausprobieren durch Änderung von Parametern 
+
+**Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
+Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
 
 #st.write(f"Ticker: SPY")
@@ -36,9 +39,9 @@ st.text_input("Ticker")
 df = pd.DataFrame({"Ticker": ["SPY"], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
 st.write(df)
 
-
+st.write("  ")
 st.markdown("### E-Mail Verteiler")
-st.write("- IN BEARBEITUNG -")
+st.write("- IN BEARBEITUNG")
 st.text_input("Deine E-Mail")
 st.button("Gib's mir!")
 
