@@ -31,7 +31,9 @@ Folgende Funktionen sind noch geplant:
 #st.write(f"SMA200: {spy.SMA200}")
 #st.write(f"PRICE: {spy.PRICE}")
 
-st.text_input("SPY")
+st.text_input("Ticker")
 
-df = pd.DataFrame({"Ticker": [spy], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
+df = pd.DataFrame({"Ticker": ["SPY"], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
 st.write(df)
+
+print(df)
