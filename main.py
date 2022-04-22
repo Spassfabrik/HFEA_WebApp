@@ -33,7 +33,5 @@ Folgende Funktionen sind noch geplant:
 
 st.text_input("SPY")
 
-df = pd.DataFrame({"Ticker": spy, "PRICE": spy.PRICE, "SMA200": spy.SMA200, "CROSSED": spy.CROSSED})
+df = pd.DataFrame({"Ticker": [spy], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
 st.write(df)
-
-st.write("Next: E-Mail & PushUp Notfications")
