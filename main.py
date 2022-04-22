@@ -36,4 +36,10 @@ st.text_input("Ticker")
 df = pd.DataFrame({"Ticker": ["SPY"], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
 st.write(df)
 
+
+st.markdown("### E-Mail Verteiler")
+st.write("- IN BEARBEITUNG -")
+st.text_input("Deine E-Mail")
+st.button("Gib's mir!")
+
 print(df)
