@@ -52,7 +52,8 @@ beta_pw = st.text_input("BETA Passwort")
 
 if st.button("Gib's mir!"):
   if beta_pw == st.secrets["NEWSLETTER_PW"]:
-    add_emails_to_list(list(email))
+    add_emails_to_list(list(email)) # TODO: E-Mail Format Validierung?!
   else: 
     st.write("Das BETA Password für den Newsletter ist falsch")
+st.write("Du hast dich erfolgreich eingetragen")
  
