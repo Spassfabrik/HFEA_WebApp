@@ -29,6 +29,10 @@ Folgende Funktionen sind noch geplant:
 * optional: Benachrichtigung via mobile PushUp Notification
 * optional: Einbindung von ZahlGrafs-Code zum selber ausprobieren durch Änderung von Parametern 
 
+
+Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
+
+
 **Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
 Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
