@@ -8,6 +8,7 @@ from sendinblue import add_emails_to_list
 # https://docs.streamlit.io/library/cheatsheet
 # https://discuss.streamlit.io/t/streamlit-option-menu-is-a-simple-streamlit-component-that-allows-users-to-select-a-single-item-from-a-list-of-options-in-a-menu/20514/26
 
+
 spy = Ticker("spy")
 
 st.title("HFEA & 200MA Strategy WebApp")
@@ -37,7 +38,10 @@ Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Com
 
 st.text_input("Ticker")
 
-df = pd.DataFrame({"Ticker": ["SPY"], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
+with st.spinner('Getting market data...'):
+    df = pd.DataFrame({"Ticker": ["SPY"], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
+st.success('Done!')
+
 st.write(df)
 
 st.write("  ")
