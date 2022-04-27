@@ -50,7 +50,7 @@ def create_contact(email: str):
     except ApiException as e:
         print("Exception when calling ContactsApi->create_contact: %s\n" % e)
 
-def add_emails_to_list(emails: list[str], list_id: int=2):
+def add_emails_to_list(emails: list, list_id: int=2):
     """Adds emails as a list to the msw sendinblue list (id = 2)"""
     try:
         # First, add new emails as a new contact
