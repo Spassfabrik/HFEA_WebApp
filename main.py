@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 
 from ticker import Ticker
+from sendinblue import add_emails_to_list
 
 # https://builtin.com/machine-learning/streamlit-tutorial
 # https://docs.streamlit.io/library/cheatsheet
@@ -42,7 +43,12 @@ st.write(df)
 st.write("  ")
 st.markdown("### E-Mail Verteiler")
 st.write("- IN BEARBEITUNG")
-st.text_input("Deine E-Mail")
-st.button("Gib's mir!")
+email = st.text_input("Deine E-Mail")
+beta_pw = st.text_input("BETA Passwort")
 
-print(df)
+if st.button("Gib's mir!"):
+  if beta_pw == st.secrets["NEWSLETTER_PW"]:
+    add_emails_to_list(list(email))
+  else: 
+    st.write("Das BETA Password für den Newsletter ist falsch")
+ 
