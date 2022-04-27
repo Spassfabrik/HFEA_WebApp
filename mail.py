@@ -3,6 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
 import time
+import streamlit as st
 
 # setup details
 sender_email = "Spassfabrik@hotmail.com"
