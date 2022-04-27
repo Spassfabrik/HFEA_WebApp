@@ -3,6 +3,7 @@ import pandas as pd
 
 from ticker import Ticker
 from sendinblue import add_emails_to_list
+from mail import send_conf_mail
 
 # https://builtin.com/machine-learning/streamlit-tutorial
 # https://docs.streamlit.io/library/cheatsheet
@@ -53,6 +54,7 @@ beta_pw = st.text_input("BETA Passwort")
 if st.button("Gib's mir!"):
   if beta_pw == st.secrets["NEWSLETTER_PW"]:
     add_emails_to_list([email]) # TODO: E-Mail Format Validierung?!
+    send_conf_mail(email)
     st.write("Du hast dich erfolgreich eingetragen")
   else: 
     st.write("Das BETA Password für den Newsletter ist falsch")
