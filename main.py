@@ -22,10 +22,11 @@ Diese WebApp soll verschiedene Funktionen anbieten, um die Handhabungen der zwei
 
 Folgende Funktionen sind noch geplant: 
 * Mehrere Ticker erlauben 
-* Benachrichtigung via E-Mail 
-* Benachrichtigung via mobile PushUp Notification
-* HFEA-Rebalancer-Rechner sowie Remind-Funktion
-* optional: Telegram Bot
+* Benachrichtigung via E-Mail (Stand: alpha-version)
+* Telegram Bot (Stand: alpha-version)
+* HFEA-Rebalancing-Rechner inkl. Sparraten sowie Remind-Funktion (E-Mail & Telegram)
+
+* optional: Benachrichtigung via mobile PushUp Notification
 * optional: Einbindung von ZahlGrafs-Code zum selber ausprobieren durch Änderung von Parametern 
 
 **Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
