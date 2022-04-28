@@ -31,6 +31,7 @@ def send_conf_mail(receiver_email: str):
         Du hast dich erfolgreich zum 200SMA-Reminder des SPY eingetragen.
         Bitte beachte, dass die E-Mails im Spam Ordner landen können. 
         Triff hier eigene Vorkehrung in deinem E-Mail Client, um keinen Reminder zu verpassen.
+        Zum Beispiel kann der Absender als Kontakt hinzugefügt werden.
 
         Keine Interesse mehr?
         Aktuell ist nur möglich via Reddit PM an u/Spassfabrik sich aus dem Newsletter austragen zu lassen.
