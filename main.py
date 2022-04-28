@@ -22,7 +22,7 @@ Diese WebApp soll verschiedene Funktionen anbieten, um die Handhabungen der zwei
 
 Folgende Funktionen sind noch geplant: 
 * Mehrere Ticker erlauben 
-* Benachrichtigung via E-Mail (Stand: alpha-version)
+* Benachrichtigung via E-Mail (Stand: beta-version)
 * Telegram Bot (Stand: alpha-version)
 * HFEA-Rebalancing-Rechner inkl. Sparraten sowie Remind-Funktion (E-Mail & Telegram)
 
