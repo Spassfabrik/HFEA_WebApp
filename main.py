@@ -60,7 +60,7 @@ if st.button("Gib's mir!"):
   if beta_pw == st.secrets["NEWSLETTER_PW"]:
     add_emails_to_list([email]) # TODO: E-Mail Format Validierung?!
     send_conf_mail(email)
-    st.write("Du hast dich erfolgreich eingetragen")
+    st.write("Du hast dich erfolgreich eingetragen! Bitte beachte, dass die E-Mail sehr wahrscheinlich im SPAM Ordner landen wird!")
   else: 
     st.write("Das BETA Password für den Newsletter ist falsch")
 
