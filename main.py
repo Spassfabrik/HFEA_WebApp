@@ -10,8 +10,8 @@ from mail import send_conf_mail
 # https://discuss.streamlit.io/t/streamlit-option-menu-is-a-simple-streamlit-component-that-allows-users-to-select-a-single-item-from-a-list-of-options-in-a-menu/20514/26
 
 # Ticker Data 
-spy = Ticker("%5EGSPC")  #("spy")
-ndx = Ticket("%5ENDX")
+spy = Ticker("^GSPC") #("%5EGSPC")  #("spy")
+ndx = Ticket("^NDX") #("%5ENDX")
 
 st.title("HFEA & 200MA Strategy WebApp")
 st.write("""
