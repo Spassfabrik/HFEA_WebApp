@@ -46,7 +46,7 @@ Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Com
 st.text_input("Ticker")
 
 with st.spinner('Getting market data...'):
-    df = pd.DataFrame({"Ticker": ["S&P500", "Nasdaq100], "PRICE": [spy.PRICE, ndx.PRICE], "SMA200": [spy.SMA200, ndx.SMA200], "CROSSED": [spy.CROSSED, ndx.CROSSED]})
+    df = pd.DataFrame({"Ticker": ["S&P500", "Nasdaq100"], "PRICE": [spy.PRICE, ndx.PRICE], "SMA200": [spy.SMA200, ndx.SMA200], "CROSSED": [spy.CROSSED, ndx.CROSSED]})
 st.success('Done!')
 
 st.write(df)
