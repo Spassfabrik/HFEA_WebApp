@@ -9,8 +9,9 @@ from mail import send_conf_mail
 # https://docs.streamlit.io/library/cheatsheet
 # https://discuss.streamlit.io/t/streamlit-option-menu-is-a-simple-streamlit-component-that-allows-users-to-select-a-single-item-from-a-list-of-options-in-a-menu/20514/26
 
-
-spy = Ticker("spy")
+# Ticker Data 
+spy = Ticker("%5EGSPC")  #("spy")
+ndx = Ticket("%5ENDX")
 
 st.title("HFEA & 200MA Strategy WebApp")
 st.write("""
@@ -37,7 +38,7 @@ Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
 Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
 
-#st.write(f"Ticker: SPY")
+#st.write(f"Ticker: S&P500")
 #st.write(f"IS_CROSSED: {spy.CROSSED}")
 #st.write(f"SMA200: {spy.SMA200}")
 #st.write(f"PRICE: {spy.PRICE}")
@@ -45,7 +46,7 @@ Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Com
 st.text_input("Ticker")
 
 with st.spinner('Getting market data...'):
-    df = pd.DataFrame({"Ticker": ["SPY"], "PRICE": [spy.PRICE], "SMA200": [spy.SMA200], "CROSSED": [spy.CROSSED]})
+    df = pd.DataFrame({"Ticker": ["S&P500", "Nasdaq100], "PRICE": [spy.PRICE, ndx.PRICE], "SMA200": [spy.SMA200, ndx.SMA200], "CROSSED": [spy.CROSSED, ndx.CROSSED]})
 st.success('Done!')
 
 st.write(df)
