@@ -11,7 +11,7 @@ from mail import send_conf_mail
 
 # Ticker Data 
 spy = Ticker("^GSPC") #("%5EGSPC")  #("spy")
-ndx = Ticket("^NDX") #("%5ENDX")
+ndx = Ticker("^NDX") #("%5ENDX")
 
 st.title("HFEA & 200MA Strategy WebApp")
 st.write("""
