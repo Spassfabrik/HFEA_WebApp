@@ -29,7 +29,7 @@ Diese WebApp soll verschiedene Funktionen anbieten, um die Handhabungen der zwei
 st.text_input("Ticker")
 
 with st.spinner('Getting market data...'):
-    df = pd.DataFrame({"Ticker": ["S&P500", "Nasdaq100"], "PRICE": [spy.PRICE, ndx.PRICE], "SMA200": [spy.SMA200, ndx.SMA200], "CROSSED": [spy.CROSSED, ndx.CROSSED]})
+    df = pd.DataFrame({"Ticker": ["S&P500", "Nasdaq100"], "PRICE": [spy.PRICE, ndx.PRICE], "SMA200": [spy.SMA200, ndx.SMA200], "CROSSED": [spy.CROSSED, ndx.CROSSED], "% Diff.": [(1-(spy.SMA200/spy.PRICE))*100, (1-(ndx.SMA200/ndx.PRICE))*100]})
 st.success('Done!')
 
 st.write(df)
