@@ -21,22 +21,14 @@ Die Serie ist hier zu finden: https://www.reddit.com/r/mauerstrassenwetten/comme
 
 Diese WebApp soll verschiedene Funktionen anbieten, um die Handhabungen der zwei verschiedenen Strategien zu vereinfachen.
 
-Folgende Funktionen sind noch geplant: 
-* Mehrere Ticker erlauben 
-* Benachrichtigung via E-Mail (Stand: beta-version)
-* Telegram Bot (Stand: alpha-version)
-* HFEA-Rebalancing-Rechner inkl. Sparraten sowie Remind-Funktion (E-Mail & Telegram)
-
-* optional: Benachrichtigung via mobile PushUp Notification
-* optional: Einbindung von ZahlGrafs-Code zum selber ausprobieren durch Änderung von Parametern 
-
-
 Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
 
 
 **Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
 Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
+
+st.image("https://i.redd.it/pjvrlinxcxw81.png")
 
 #st.write(f"Ticker: S&P500")
 #st.write(f"IS_CROSSED: {spy.CROSSED}")
@@ -53,7 +45,7 @@ st.write(df)
 
 st.write("  ")
 st.markdown("### E-Mail Verteiler")
-st.write("- IN BEARBEITUNG")
+st.write("E-Mails erfolgen nur, wenn der 200SMA durchbrochen wurde. Die Prüfung erfolgt um 18 sowie 21:45 Uhr, und nur von Mo-Fr.")
 email = st.text_input("Deine E-Mail")
 beta_pw = st.text_input("BETA Passwort")
 
@@ -64,5 +56,16 @@ if st.button("Gib's mir!"):
     st.write("Du hast dich erfolgreich eingetragen! Bitte beachte, dass die E-Mail sehr wahrscheinlich im SPAM Ordner landen wird!")
   else: 
     st.write("Das BETA Password für den Newsletter ist falsch")
+   
+  
+st.title("ToDos / Features")
+st.write(""" 
+* Mehrere Ticker erlauben 
+* Telegram Bot (Stand: alpha-version)
+* HFEA-Rebalancing-Rechner inkl. Sparraten sowie Remind-Funktion (E-Mail & Telegram)
+
+* optional: Benachrichtigung via mobile PushUp Notification
+* optional: Einbindung von ZahlGrafs-Code zum selber ausprobieren durch Änderung von Parametern
+""")
 
  
