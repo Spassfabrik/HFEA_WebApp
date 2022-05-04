@@ -24,12 +24,6 @@ st.image("https://i.redd.it/pjvrlinxcxw81.png")
 
 st.write("""
 Diese WebApp soll verschiedene Funktionen anbieten, um die Handhabungen der zwei verschiedenen Strategien zu vereinfachen.
-
-Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
-
-
-**Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
-Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
 
 st.text_input("Ticker")
@@ -55,6 +49,12 @@ if st.button("Gib's mir!"):
     st.write("Das BETA Passwort für den Newsletter ist falsch")
    
 st.write("  ")
+st.title("API")
+st.write(""" 
+Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
+""")
+
+st.write("  ")
 st.title("ToDos / Features")
 st.write(""" 
 * Mehrere Ticker erlauben 
@@ -63,6 +63,10 @@ st.write("""
 
 * optional: Benachrichtigung via mobile PushUp Notification
 * optional: Einbindung von ZahlGrafs-Code zum selber ausprobieren durch Änderung von Parametern
+
+
+**Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
+Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
 
  
