@@ -18,7 +18,11 @@ st.write("""
 Die Idee zu diesem Projekt stammt vom exzellenten Abenteuer des ZahlGrafs, der sich tief mit gehebelte ETFs und verschiedenen Strategien beschäftigt hat. 
 Ganz speziell hat er sich die HFEA-Strategie vorgenommen und in seiner Analysen festgestellt, dass auch eine 200-SMA-Strategie bei LETFs sinnvoll sein kann.
 Die Serie ist hier zu finden: https://www.reddit.com/r/mauerstrassenwetten/comments/s71qds/zahlgrafs_exzellente_abenteuer_teil_1/
+""")
 
+st.image("https://i.redd.it/pjvrlinxcxw81.png")
+
+st.write("""
 Diese WebApp soll verschiedene Funktionen anbieten, um die Handhabungen der zwei verschiedenen Strategien zu vereinfachen.
 
 Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
@@ -27,13 +31,6 @@ Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
 **Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
 Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
-
-st.image("https://i.redd.it/pjvrlinxcxw81.png")
-
-#st.write(f"Ticker: S&P500")
-#st.write(f"IS_CROSSED: {spy.CROSSED}")
-#st.write(f"SMA200: {spy.SMA200}")
-#st.write(f"PRICE: {spy.PRICE}")
 
 st.text_input("Ticker")
 
@@ -44,7 +41,7 @@ st.success('Done!')
 st.write(df)
 
 st.write("  ")
-st.markdown("### E-Mail Verteiler")
+st.title("E-Mail Verteiler")
 st.write("E-Mails erfolgen nur, wenn der 200SMA durchbrochen wurde. Die Prüfung erfolgt um 18 sowie 21:45 Uhr, und nur von Mo-Fr.")
 email = st.text_input("Deine E-Mail")
 beta_pw = st.text_input("BETA Passwort")
@@ -55,9 +52,9 @@ if st.button("Gib's mir!"):
     send_conf_mail(email)
     st.write("Du hast dich erfolgreich eingetragen! Bitte beachte, dass die E-Mail sehr wahrscheinlich im SPAM Ordner landen wird!")
   else: 
-    st.write("Das BETA Password für den Newsletter ist falsch")
+    st.write("Das BETA Passwort für den Newsletter ist falsch")
    
-  
+st.write("  ")
 st.title("ToDos / Features")
 st.write(""" 
 * Mehrere Ticker erlauben 
