@@ -51,7 +51,7 @@ if st.button("Gib's mir!"):
 st.write("  ")
 st.title("Telegram Bot")
 st.write(""" 
-Der Telegram Bot ist unter "@LETFsAbenteuerBot" zu finden. 
+Der Telegram Bot ist unter **"@LETFsAbenteuerBot"** zu finden. 
 Der Bot befindet sich aktuell in einer BETA-Phase und wirkliche Funktionalitäten gibt es bisher nicht. 
 Von Mo. bis Fr. um jeweils 21:45 Uhr erfolgt eine Benachrichtigung mit den wichtigsten Informationen zum S&P500.
 """)
