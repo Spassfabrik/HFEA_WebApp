@@ -49,6 +49,14 @@ if st.button("Gib's mir!"):
     st.write("Das BETA Passwort für den Newsletter ist falsch")
    
 st.write("  ")
+st.title("Telegram Bot")
+st.write(""" 
+Der Telegram Bot ist unter "@LETFsAbenteuerBot" zu finden. 
+Der Bot befindet sich aktuell in einer BETA-Phase und wirkliche Funktionalitäten gibt es bisher nicht. 
+Von Mo. bis Fr. um jeweils 21:45 Uhr erfolgt eine Benachrichtigung mit den wichtigsten Informationen zum S&P500.
+""")
+
+st.write("  ")
 st.title("API")
 st.write(""" 
 Die aktuelle API ist hier zu finden: https://ed8boq.deta.dev/v1/docs
@@ -58,14 +66,13 @@ st.write("  ")
 st.title("ToDos / Features")
 st.write(""" 
 * Mehrere Ticker erlauben 
-* Telegram Bot (Stand: alpha-version)
-* HFEA-Rebalancing-Rechner inkl. Sparraten sowie Remind-Funktion (E-Mail & Telegram)
+* HFEA-Rebalancing-Rechner inkl. Sparraten sowie RemindMe-Funktion (E-Mail & Telegram)
 
 * optional: Benachrichtigung via mobile PushUp Notification
 * optional: Einbindung von ZahlGrafs-Code zum selber ausprobieren durch Änderung von Parametern
 
 
-**Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik.
+**Betreut wird das Projekt aktuell durch Finanzflunder & Spassfabrik. Bei Fragen gerne an uns direkt wenden.
 Großer Dank geht natürlich an ZahlGraf und die gesamte Mauerstrassenwetten-Community**
 """)
 
