@@ -27,9 +27,12 @@ Diese WebApp soll verschiedene Funktionen anbieten, um die Handhabungen der zwei
 """)
 
 st.text_input("Ticker")
+st.write("""
+Info zum SMA: SPY bezieht sich auf SMA200 und Nasdaq100 auf SMA220.
+""")
 
 with st.spinner('Getting market data...'):
-    df = pd.DataFrame({"Ticker": ["S&P500", "Nasdaq100"], "PRICE": [spy.PRICE, ndx.PRICE], "SMA200": [spy.SMA200, ndx.SMA200], "CROSSED": [spy.CROSSED, ndx.CROSSED], "% Diff.": [(1-(spy.SMA200/spy.PRICE))*100, (1-(ndx.SMA200/ndx.PRICE))*100]})
+    df = pd.DataFrame({"Ticker": ["S&P500", "NASDAQ100"], "PRICE": [spy.PRICE, ndx.PRICE], "SMA": [spy.SMA200, ndx.SMA220], "CROSSED": [spy.sma200_CROSSED, ndx.sma220_CROSSED], "% Diff.": [(1-(spy.SMA200/spy.PRICE))*100, (1-(ndx.SMA200/ndx.PRICE))*100]})
 st.success('Done!')
 
 st.write(df)
