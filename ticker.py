@@ -27,12 +27,20 @@ class Ticker:
     @property
     def SMA200(self):
         return round(self.ticker_data.get("SMA200"),2)
+    
+    @property
+    def SMA220(self):
+        return round(self.ticker_data.get("SMA220"),2)
 
     @property
     def PRICE(self): 
         return round(self.ticker_data.get("current_course"),2)
     
     @property
-    def CROSSED(self): 
+    def sma200_CROSSED(self): 
         return self.ticker_data.get("is_sma200_cross")
-
+    
+    @property
+    def sma220_CROSSED(self): 
+        return self.ticker_data.get("is_sma220_cross")
+    
